@@ -75,11 +75,11 @@ print("EL total de la cuenta es: ", importe )
 #Esto creo que esta mal planteado, habria que saber que monedas y billetes tiene para pagar
 #De momento lo dejamos con el minimo numero de billetes
 #TODO 
-print("Para pagar con el menur numero de billetes/monedas deberia usar: ")
+print("Para pagar con el menor numero de billetes/monedas deberia usar: ")
 resto = importe
 while resto > 0:
-    i=0
-    while dinero[i] < resto:
+    i=0    
+    while dinero[i] < resto and i < len(dinero)-1:
         i += 1
     print (" 1 de ", dinero[i])
     resto -= dinero[i]    
